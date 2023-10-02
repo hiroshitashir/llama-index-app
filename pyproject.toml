@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "llama-index-app"
+version = "0.1.0"
+description = ""
+authors = ["Hiroshi Tashiro <hiroshitash@gmail.com>"]
+readme = "README.md"
+packages = [{include = "llama_index_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+llama-index = "^0.8.35"
+llama-cpp-python = "^0.2.7"
+youtube-transcript-api = "^0.6.1"
+llama-hub = "^0.0.34"
+transformers = "^4.33.3"
+torch = "^2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

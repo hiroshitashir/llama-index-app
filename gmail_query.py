@@ -5,6 +5,6 @@ storage_context = StorageContext.from_defaults(persist_dir="index-gmail")
 index = load_index_from_storage(storage_context)
 query_engine = index.as_query_engine()
 response = query_engine.query(
-    "What is my most recent email?"
+    "Are there emails about The Ferris Report? If so, what are the titles?"
 )
 print(response)

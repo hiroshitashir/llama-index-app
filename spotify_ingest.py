@@ -1,7 +1,10 @@
+### Reference https://llamahub.ai/l/spotify
+
 from llama_index import download_loader
 
-GmailReader = download_loader('GmailReader')
-loader = GmailReader(query="after:2023-01-01", service=None, results_per_page=10)
+SpotifyReader = download_loader('SpotifyReader')
+
+loader = SpotifyReader()
 documents = loader.load_data()
 
 # 2. Parse the docs into nodes
@@ -15,4 +18,4 @@ from llama_index import GPTVectorStoreIndex
 index = GPTVectorStoreIndex(nodes)
 
 # 4. Store the index
-index.storage_context.persist(persist_dir="index-gmail")
+index.storage_context.persist(persist_dir="index-spotify")

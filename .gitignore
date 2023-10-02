@@ -1,0 +1,5 @@
+env.sh
+credentials.json
+poetry.lock
+index-gmail
+index-spotify
